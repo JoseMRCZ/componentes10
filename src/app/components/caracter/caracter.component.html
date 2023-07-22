@@ -1,0 +1,9 @@
+<ng-container *ngIf="caracter">
+    <h2>{{caracter.name}}</h2>
+    <p>Especie:&nbsp; {{caracter.species}} </p>
+    <p>Genero:&nbsp;{{caracter.gender}} </p>
+    <img [ngSrc]="caracter.images" width="200" height="200">
+</ng-container>
+<ng-container *ngIf="!caracter">
+    Producto no renderizado
+</ng-container>
